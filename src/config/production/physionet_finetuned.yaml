@@ -1,0 +1,28 @@
+# Optimal hyperparameters identified during research optimization searches (via Optuna).
+# Foundational Model Configs
+finetune_ckpt: checkpoint/labram-base.pth
+
+# Data/Task Specific configs
+dataset: physionetmi_lr
+nb_classes: 2
+task_type: binary
+label_type: global
+in_channels: 64
+dataset_path: src/data/physionet_datamodule
+data_dir: data/physiomi
+EEG_size: 800
+
+# Training Configs
+num_workers: 4
+epochs: 400 # Generous for double descent and fewer samples due to non-overlapping windows
+batch_size: 32
+drop_rate: 0.692
+drop_path_rate: 0.692
+attn_drop_rate: 0.692
+weight_decay: 8.5e-04
+lr: 7.6e-05
+warmup_epochs: 8
+warmup_start_lr: 5.9e-06
+
+# Output Configs
+output_dir: output

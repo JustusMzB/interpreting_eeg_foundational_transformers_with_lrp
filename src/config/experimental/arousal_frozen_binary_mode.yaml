@@ -1,0 +1,27 @@
+# Foundational Model Configs
+finetune_ckpt: checkpoint/labram-base.pth
+freeze_backbone: True
+head_n_hidden_layers: 0
+head_hidden_dim: 16
+
+
+# Data/Task Specific configs
+dataset: brain_heart_arousal
+nb_classes: 2
+task_type: binary
+label_type: patchwise
+in_channels: 60
+dataset_path: src/data/brain_heart_emotion
+data_dir: /ptmp/$USER/preproc
+EEG_size: 800
+
+# Training Configs
+num_workers: 24
+batch_size: 128
+epochs: 100
+drop_rate: 0.5
+drop_path_rate: 0.5
+attn_drop_rate: 0.5
+
+# Output Configs
+output_dir: /ptmp/$USER/logs

@@ -1,0 +1,14 @@
+\begin{table}[ht]
+\centering
+\caption{Model performance across 20 runs per condition based on electrode inclusion. Notation: Mean (std.). Two-sided Mann--Whitney $U$ test on balanced accuracy, all available electrodes vs.\ without facial MC electrodes (normal approximation with tie correction, no continuity correction): $U = 281$, $z = 2.19$, $p = .028$, $r = .35$.}
+\label{tab:facial_mc_ablation}
+\begin{tabular}{lccc}
+\toprule
+Condition & AUROC & Bal.\ Acc. & F1 \\
+\midrule
+All available electrodes & 0.725 (0.149) & 0.664 (0.116) & 0.663 (0.109) \\
+Facial MC electrodes only & 0.688 (0.165) & 0.635 (0.120) & 0.622 (0.123) \\
+Without facial MC electrodes & 0.612 (0.129) & 0.584 (0.099) & 0.587 (0.100) \\
+\bottomrule
+\end{tabular}
+\end{table}

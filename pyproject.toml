@@ -1,0 +1,94 @@
+[project]
+name = "neuroimaging-foundational-xai"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "bids>=0.0",
+    "dask[dataframe]>=2026.3.0",
+    "datasets==3.6",
+    "einops>=0.8.2",
+    "ipython>=9.10.0",
+    "ipywidgets>=8.1.8",
+    "jupyter>=1.1.1",
+    "kaleido",
+    "lightning-bolts>=0.7.0",
+    "lightning==2.6.1",
+    "lxt==2.0",
+    "matplotlib>=3.10.8",
+    "mne==1.4.2",
+    "nibabel>=5.4.2",
+    "nilearn>=0.13.1",
+    "numpy==1.26.4",
+    "optuna>=4.7.0",
+    "optuna-dashboard>=0.20.0",
+    "optuna-integration[pytorch-lightning]>=4.7.0",
+    "pandas==2.3.0",
+    "plotly>=6.6.0",
+    "pyarrow>=23.0.1",
+    "pytest>=9.0.2",
+    "rich>=14.3.3",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "scipy-stubs~=1.17.1",
+    "seaborn>=0.13.2",
+    "setuptools==75.8.2",
+    "tensorboard==2.20.0",
+    "tensorboard-data-server==0.7.1",
+    "tensorboardx==2.6.2.2",
+    "transformers==4.49.0",
+    "zennit>=0.5.1",
+]
+[project.optional-dependencies]
+cpu = [
+    "torchvision>=0.25.0",
+    "torch>=2.10.0"
+]
+rocm7 = [
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+    "triton-rocm",
+]
+cuda126 = [
+    "torch>=2.10",
+    "torchvision>=0.25.0",
+]
+
+[tool.uv]
+conflicts = [
+    [
+        { extra = "cpu" },
+        { extra = "rocm7" },
+        { extra = "cuda126" },
+    ],
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", extra = "cpu" },
+    { index = "rocm7", extra = "rocm7" },
+    { index = "cuda126", extra = "cuda126" }
+]
+
+torchvision = [
+    { index = "pytorch-cpu", extra = "cpu" },
+    { index = "rocm7", extra = "rocm7" },
+    { index = "cuda126", extra = "cuda126" }
+]
+triton-rocm = [
+  { index = "rocm7", extra = "rocm7"},
+]
+
+[[tool.uv.index]]
+name = "rocm7"
+url = "https://download.pytorch.org/whl/rocm7.1"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "cuda126"
+url = "https://download.pytorch.org/whl/cu126"
+explicit = true

@@ -1,0 +1,25 @@
+searchspace: 
+  batch_size:
+    type: categorical
+    choices: [ 32, 64, 128, 256 ]
+  dropout:
+    type: float
+    low: 0.1
+    high: 0.99
+    kwarg_names:
+      - drop_rate
+      - drop_path_rate
+      - attn_drop_rate
+  weight_decay:
+    type: float
+    low: 1e-6
+    high: 0.01
+    log: true
+
+# Additional hyperparameters for the head
+  head_n_hidden_layers:
+    type: categorical
+    choices: [ 0, 1, 2, 3, 4 ]
+  head_hidden_dim:
+    type: categorical
+    choices: [ 8, 16, 32, 64] # Larger than that just reaches same capacity as using the full backbone

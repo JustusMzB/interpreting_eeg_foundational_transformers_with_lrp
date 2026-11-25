@@ -1,0 +1,31 @@
+searchspace: 
+  batch_size:
+    type: categorical
+    choices: [ 32, 64, 128, 256 ]
+  dropout:
+    type: float
+    low: 0.1
+    high: 0.99
+    kwarg_names:
+      - drop_rate
+      - drop_path_rate
+      - attn_drop_rate
+  weight_decay:
+    type: float
+    low: 1e-6
+    high: 0.01
+    log: true
+  lr:
+    type: float
+    low: 5e-6
+    high: 1e-4
+    log: true
+  warmup_epochs: # Important for finetuning to prevent catastrophic forgetting through initial large updates
+    type: int
+    low: 0
+    high: 40
+  warmup_start_lr:
+    type: float
+    low: 1e-6
+    high: 1e-5
+    log: true

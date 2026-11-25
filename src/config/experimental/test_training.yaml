@@ -1,0 +1,20 @@
+# Foundational Model Configs
+finetune_ckpt: checkpoint/labram-base.pth
+
+# Data/Task Specific configs
+dataset: brain_heart_rpeak
+nb_classes: 2
+label_type: seq2seq
+in_channels: 60
+dataset_path: src/data/brain_heart_emotion
+data_dir: $HOME/projects/datasets/censored
+EEG_size: 800
+
+batch_size: 32
+dropout: 30
+weight_decay: 7.5e-5
+class_weights: 6.5
+
+do_testing: true
+attribute: true
+attributions_per_example: 4

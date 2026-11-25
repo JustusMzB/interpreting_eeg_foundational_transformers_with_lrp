@@ -1,0 +1,13 @@
+AOPC Evaluation Methodology
+===========================
+
+Perturbation strategy: global_mean (replacement value computed per sample and channel)
+Per-sample ordering: prediction
+Global ordering: magnitude
+Max perturbation steps L: 10
+Seed: 0
+
+Score (paper Eq. 2): AOPC = 1/(L+1) * sum_{s=1..L} sign(f(x)) * (f(x) - f(x_s)), per sample, averaged over samples. sign(f(x)) is the sign of the model's own (single) logit, not the dataset label. Perturbations are cumulative along the channel order.
+Orders: LRP and G×I use identical ordering functions (evaluate.aopc.per_sample_order / global_order) on channel scores summed over time. G×I channel scores are normalised per sample by their max |value| (G×I is unbounded); LRP scores are used as visualised.
+Random baseline: seeded random permutation per sample.
+Per-sample values and a breakdown by predicted class are stored in the results JSON ('per_sample_aopc', 'aopc_by_predicted_class'). 'legacy_running_mean_scores' holds the pre-fix score mean_k(cumsum_k/k) for comparison only.

@@ -1,0 +1,6 @@
+method,n,mean,sd,rel_random
+Per-sample LRP,596,0.803714,0.860083,15.535267
+Per-sample G×I,596,0.340459,0.581626,6.580859
+Global aggregate LRP,596,0.393299,0.815473,7.602221
+Global aggregate G×I,596,0.096023,0.322477,1.856054
+Random baseline,596,0.051735,0.270915,1.000000

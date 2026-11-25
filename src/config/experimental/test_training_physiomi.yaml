@@ -1,0 +1,24 @@
+# Foundational Model Configs
+finetune_ckpt: checkpoint/labram-base.pth
+
+# Data/Task Specific configs
+dataset: physionetmi_lr
+nb_classes: 2
+task_type: binary
+label_type: global
+in_channels: 64
+dataset_path: src/data/physionet_datamodule
+data_dir: $HOME/Projects/datasets/physiomi
+EEG_size: 800
+
+batch_size: 32
+drop_rate: .1
+drop_path_rate: .1
+attn_drop_rate: .1
+lr: .0001
+freeze_backbone: false
+epochs: 400
+
+
+# do_testing: true
+# attribute: true

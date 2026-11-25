@@ -1,0 +1,41 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Electrode relevance, one panel per task: per task, the electrodes with FDR-significantly higher relevance than the background. El.: electrode. Mdn (IQR: Q1--Q3): relative relevance of the electrode across runs (arousal: $n = 15$, PhysioMI: $n = 15$ runs); $z$, $p$, $p_{\mathrm{FDR}}$ and $r$: one-sided Mann--Whitney $U$ test of the electrode against all other electrodes (normal approximation with tie correction, no continuity correction); FDR: Benjamini--Hochberg across the electrodes of each task; $r = z / \sqrt{N}$. Arousal: The background group, the relative relevance of all other electrodes in all runs ($n = 885$ per test), was virtually identical in all 60 tests (Mdn = .014, Q1 = .006, Q3 = .024--.025 across tests). PhysioMI: The background group, the relative relevance of all other electrodes in all runs ($n = 945$ per test), was virtually identical in all 64 tests (Mdn = .012--.013, Q1 = .006, Q3 = .021 across tests).}
+\label{tab:electrode_summary_both_tasks}
+\begin{tabular}{llrrrr}
+\toprule
+El. & Mdn (IQR) & $z$ & $p$ & $p_{\mathrm{FDR}}$ & $r$ \\
+\midrule
+\multicolumn{6}{l}{\textit{Arousal}} \\
+CP2 & .037 (.033--.043) & $5.01$ & $< .001$ & $< .001$ & $.17$ \\
+C2 & .043 (.022--.050) & $4.82$ & $< .001$ & $< .001$ & $.16$ \\
+Cz & .035 (.026--.037) & $4.60$ & $< .001$ & $< .001$ & $.15$ \\
+CP6 & .031 (.024--.039) & $4.19$ & $< .001$ & $< .001$ & $.14$ \\
+TP7 & .035 (.024--.040) & $4.17$ & $< .001$ & $< .001$ & $.14$ \\
+FC6 & .027 (.023--.043) & $4.16$ & $< .001$ & $< .001$ & $.14$ \\
+P6 & .035 (.025--.067) & $3.96$ & $< .001$ & $< .001$ & $.13$ \\
+FC2 & .032 (.022--.034) & $3.41$ & $< .001$ & $.002$ & $.11$ \\
+POz & .027 (.023--.031) & $3.24$ & $< .001$ & $.004$ & $.11$ \\
+TP8 & .026 (.019--.034) & $2.94$ & $.002$ & $.010$ & $.10$ \\
+T8 & .025 (.020--.031) & $2.88$ & $.002$ & $.011$ & $.10$ \\
+C5 & .026 (.021--.029) & $2.82$ & $.002$ & $.012$ & $.09$ \\
+CP5 & .024 (.019--.035) & $2.77$ & $.003$ & $.013$ & $.09$ \\
+F3 & .025 (.017--.030) & $2.75$ & $.003$ & $.013$ & $.09$ \\
+CPz & .025 (.020--.029) & $2.64$ & $.004$ & $.016$ & $.09$ \\
+\midrule \multicolumn{6}{l}{\textit{PhysioMI L/R}} \\
+AF7 & .047 (.020--.054) & $4.68$ & $< .001$ & $< .001$ & $.15$ \\
+AF8 & .045 (.028--.055) & $4.59$ & $< .001$ & $< .001$ & $.15$ \\
+Fp2 & .036 (.024--.050) & $4.25$ & $< .001$ & $< .001$ & $.14$ \\
+F7 & .027 (.019--.036) & $4.18$ & $< .001$ & $< .001$ & $.13$ \\
+AF3 & .028 (.020--.034) & $4.07$ & $< .001$ & $< .001$ & $.13$ \\
+AF4 & .027 (.019--.035) & $3.99$ & $< .001$ & $< .001$ & $.13$ \\
+Fp1 & .042 (.025--.052) & $3.80$ & $< .001$ & $< .001$ & $.12$ \\
+F5 & .025 (.017--.033) & $3.46$ & $< .001$ & $.002$ & $.11$ \\
+F8 & .023 (.020--.028) & $3.14$ & $< .001$ & $.006$ & $.10$ \\
+Fpz & .029 (.012--.046) & $2.85$ & $.002$ & $.014$ & $.09$ \\
+T9 & .026 (.011--.031) & $2.53$ & $.006$ & $.033$ & $.08$ \\
+\bottomrule
+\end{tabular}
+\end{table}

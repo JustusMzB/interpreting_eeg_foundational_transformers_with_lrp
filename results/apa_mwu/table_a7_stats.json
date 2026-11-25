@@ -1,0 +1,563 @@
+{
+ "description": "Table A7: PhysioMI L/R facial MC electrode ablation, finetuned LaBraM, 20 runs per condition",
+ "provenance": {
+  "created": "2026-10-30T13:30:42",
+  "git_commit": "4296fde40a95e69b97674a9ddfba8ef3ac8f56d9",
+  "git_branch": "apa_mwu_reporting",
+  "git_uncommitted_changes": false,
+  "python": "3.12.9",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "pandas": "2.3.0",
+  "mwu_settings": {
+   "method": "asymptotic",
+   "use_continuity": false,
+   "tie_correction": true,
+   "description": "normal approximation with tie correction, no continuity correction"
+  },
+  "data_sources": {
+   "OUTPUT_DIR": "/ptmp/$USER/logs/clever_hans_suite_confirmatory",
+   "baseline": "/viper/ptmp1/$USER/logs/clever_hans_suite/baseline",
+   "only_lateral": "/viper/ptmp1/$USER/logs/clever_hans_suite_confirmatory/only_lateral",
+   "holdout_lateral": "/viper/ptmp1/$USER/logs/clever_hans_suite_confirmatory/holdout_lateral"
+  }
+ },
+ "inputs": {
+  "runs": [
+   {
+    "condition": "baseline",
+    "seed_idx": 0,
+    "seed": 42,
+    "AUROC": 0.869058907,
+    "Bal. Acc.": 0.7890030146,
+    "F1": 0.7927631736
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 1,
+    "seed": 43,
+    "AUROC": 0.8681015968,
+    "Bal. Acc.": 0.7611163855,
+    "F1": 0.7473309636
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 2,
+    "seed": 44,
+    "AUROC": 0.5196141005,
+    "Bal. Acc.": 0.5179528594,
+    "F1": 0.5527950525
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 3,
+    "seed": 45,
+    "AUROC": 0.6108708382,
+    "Bal. Acc.": 0.5731630325,
+    "F1": 0.5480427146
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 4,
+    "seed": 46,
+    "AUROC": 0.6844843626,
+    "Bal. Acc.": 0.6269090176,
+    "F1": 0.606382966
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 5,
+    "seed": 47,
+    "AUROC": 0.8405978084,
+    "Bal. Acc.": 0.7652835846,
+    "F1": 0.7658863068
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 6,
+    "seed": 48,
+    "AUROC": 0.8520970941,
+    "Bal. Acc.": 0.7487159967,
+    "F1": 0.7204502821
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 7,
+    "seed": 49,
+    "AUROC": 0.844810009,
+    "Bal. Acc.": 0.752342701,
+    "F1": 0.7302752137
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 8,
+    "seed": 50,
+    "AUROC": 0.8317002058,
+    "Bal. Acc.": 0.7397733927,
+    "F1": 0.73413378
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 9,
+    "seed": 51,
+    "AUROC": 0.7931928039,
+    "Bal. Acc.": 0.7325651646,
+    "F1": 0.7165775299
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 10,
+    "seed": 52,
+    "AUROC": 0.577814579,
+    "Bal. Acc.": 0.5602333546,
+    "F1": 0.5513698459
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 11,
+    "seed": 53,
+    "AUROC": 0.8786266446,
+    "Bal. Acc.": 0.7758818865,
+    "F1": 0.7568555474
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 12,
+    "seed": 54,
+    "AUROC": 0.5125242472,
+    "Bal. Acc.": 0.505541265,
+    "F1": 0.4555555582
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 13,
+    "seed": 55,
+    "AUROC": 0.8779733777,
+    "Bal. Acc.": 0.779959023,
+    "F1": 0.7737478614
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 14,
+    "seed": 56,
+    "AUROC": 0.5666700602,
+    "Bal. Acc.": 0.533439219,
+    "F1": 0.577912271
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 15,
+    "seed": 57,
+    "AUROC": 0.5204476118,
+    "Bal. Acc.": 0.4936928749,
+    "F1": 0.5049180388
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 16,
+    "seed": 58,
+    "AUROC": 0.5629477501,
+    "Bal. Acc.": 0.5343289375,
+    "F1": 0.5559105277
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 17,
+    "seed": 59,
+    "AUROC": 0.5809850693,
+    "Bal. Acc.": 0.5479456782,
+    "F1": 0.6177715063
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 18,
+    "seed": 60,
+    "AUROC": 0.8433910012,
+    "Bal. Acc.": 0.7703405619,
+    "F1": 0.7712854743
+   },
+   {
+    "condition": "baseline",
+    "seed_idx": 19,
+    "seed": 61,
+    "AUROC": 0.8730572462,
+    "Bal. Acc.": 0.7783484459,
+    "F1": 0.7731958628
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 20,
+    "seed": 62,
+    "AUROC": 0.8532797098,
+    "Bal. Acc.": 0.7510023713,
+    "F1": 0.7357142568
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 21,
+    "seed": 63,
+    "AUROC": 0.8376300931,
+    "Bal. Acc.": 0.7569941878,
+    "F1": 0.7272727489
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 22,
+    "seed": 64,
+    "AUROC": 0.8428560495,
+    "Bal. Acc.": 0.7583907843,
+    "F1": 0.7559322119
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 23,
+    "seed": 65,
+    "AUROC": 0.5071124434,
+    "Bal. Acc.": 0.5229873657,
+    "F1": 0.4282828271
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 24,
+    "seed": 66,
+    "AUROC": 0.8456491828,
+    "Bal. Acc.": 0.7526129484,
+    "F1": 0.7360861897
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 25,
+    "seed": 67,
+    "AUROC": 0.8434416652,
+    "Bal. Acc.": 0.7459566593,
+    "F1": 0.7602523565
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 26,
+    "seed": 68,
+    "AUROC": 0.5034126043,
+    "Bal. Acc.": 0.4902576804,
+    "F1": 0.552129209
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 27,
+    "seed": 69,
+    "AUROC": 0.6023448706,
+    "Bal. Acc.": 0.5635896921,
+    "F1": 0.5547945499
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 28,
+    "seed": 70,
+    "AUROC": 0.5028495193,
+    "Bal. Acc.": 0.4927918315,
+    "F1": 0.4701754451
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 29,
+    "seed": 71,
+    "AUROC": 0.8473666906,
+    "Bal. Acc.": 0.7420034409,
+    "F1": 0.7129455805
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 30,
+    "seed": 72,
+    "AUROC": 0.5170067549,
+    "Bal. Acc.": 0.5187075138,
+    "F1": 0.5240464211
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 31,
+    "seed": 73,
+    "AUROC": 0.5869768262,
+    "Bal. Acc.": 0.5425733328,
+    "F1": 0.6051872969
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 32,
+    "seed": 74,
+    "AUROC": 0.4925665557,
+    "Bal. Acc.": 0.4917106032,
+    "F1": 0.4214559495
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 33,
+    "seed": 75,
+    "AUROC": 0.8460940719,
+    "Bal. Acc.": 0.7628620863,
+    "F1": 0.7504425049
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 34,
+    "seed": 76,
+    "AUROC": 0.8421183228,
+    "Bal. Acc.": 0.7378023863,
+    "F1": 0.7263157964
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 35,
+    "seed": 77,
+    "AUROC": 0.8542032838,
+    "Bal. Acc.": 0.7590101957,
+    "F1": 0.7366482615
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 36,
+    "seed": 78,
+    "AUROC": 0.5875512362,
+    "Bal. Acc.": 0.5600981712,
+    "F1": 0.5467128158
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 37,
+    "seed": 79,
+    "AUROC": 0.8351861238,
+    "Bal. Acc.": 0.7238816023,
+    "F1": 0.7007299066
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 38,
+    "seed": 80,
+    "AUROC": 0.4510350823,
+    "Bal. Acc.": 0.4687795639,
+    "F1": 0.5431034565
+   },
+   {
+    "condition": "only_lateral",
+    "seed_idx": 39,
+    "seed": 81,
+    "AUROC": 0.5542134047,
+    "Bal. Acc.": 0.5497477055,
+    "F1": 0.4562118053
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 20,
+    "seed": 62,
+    "AUROC": 0.5341937542,
+    "Bal. Acc.": 0.5240347981,
+    "F1": 0.5389610529
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 21,
+    "seed": 63,
+    "AUROC": 0.839099884,
+    "Bal. Acc.": 0.754674077,
+    "F1": 0.745644629
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 22,
+    "seed": 64,
+    "AUROC": 0.4987385869,
+    "Bal. Acc.": 0.5152948499,
+    "F1": 0.4524714947
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 23,
+    "seed": 65,
+    "AUROC": 0.5130929947,
+    "Bal. Acc.": 0.5147317052,
+    "F1": 0.5538461804
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 24,
+    "seed": 66,
+    "AUROC": 0.8582466245,
+    "Bal. Acc.": 0.769169271,
+    "F1": 0.7495429516
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 25,
+    "seed": 67,
+    "AUROC": 0.5400279164,
+    "Bal. Acc.": 0.5121412873,
+    "F1": 0.5730994344
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 26,
+    "seed": 68,
+    "AUROC": 0.6012524366,
+    "Bal. Acc.": 0.5743794441,
+    "F1": 0.5876623392
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 27,
+    "seed": 69,
+    "AUROC": 0.6890345216,
+    "Bal. Acc.": 0.6461120844,
+    "F1": 0.6465661526
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 28,
+    "seed": 70,
+    "AUROC": 0.5124678612,
+    "Bal. Acc.": 0.4981754422,
+    "F1": 0.5454545617
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 29,
+    "seed": 71,
+    "AUROC": 0.8501318097,
+    "Bal. Acc.": 0.7693043947,
+    "F1": 0.7522603869
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 30,
+    "seed": 72,
+    "AUROC": 0.5240235329,
+    "Bal. Acc.": 0.5224918127,
+    "F1": 0.4016913176
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 31,
+    "seed": 73,
+    "AUROC": 0.5254764557,
+    "Bal. Acc.": 0.5140109062,
+    "F1": 0.5307443142
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 32,
+    "seed": 74,
+    "AUROC": 0.5138363242,
+    "Bal. Acc.": 0.5081880689,
+    "F1": 0.4974271059
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 33,
+    "seed": 75,
+    "AUROC": 0.5600249767,
+    "Bal. Acc.": 0.5467630625,
+    "F1": 0.5360824466
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 34,
+    "seed": 76,
+    "AUROC": 0.622015357,
+    "Bal. Acc.": 0.5966234207,
+    "F1": 0.6204724312
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 35,
+    "seed": 77,
+    "AUROC": 0.8423604965,
+    "Bal. Acc.": 0.7599112391,
+    "F1": 0.7547169924
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 36,
+    "seed": 78,
+    "AUROC": 0.5377979279,
+    "Bal. Acc.": 0.5311979055,
+    "F1": 0.5597484112
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 37,
+    "seed": 79,
+    "AUROC": 0.6082860231,
+    "Bal. Acc.": 0.576620698,
+    "F1": 0.6053042412
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 38,
+    "seed": 80,
+    "AUROC": 0.5225875378,
+    "Bal. Acc.": 0.5150358081,
+    "F1": 0.5093378425
+   },
+   {
+    "condition": "holdout_lateral",
+    "seed_idx": 39,
+    "seed": 81,
+    "AUROC": 0.5480864644,
+    "Bal. Acc.": 0.5284272432,
+    "F1": 0.5740181208
+   }
+  ]
+ },
+ "table_a7_mean_std": [
+  {
+   "Condition": "All available electrodes",
+   "n": 20,
+   "AUROC": "0.725 (0.149)",
+   "Bal. Acc.": "0.664 (0.116)",
+   "F1": "0.663 (0.109)"
+  },
+  {
+   "Condition": "Facial MC electrodes only",
+   "n": 20,
+   "AUROC": "0.688 (0.165)",
+   "Bal. Acc.": "0.635 (0.120)",
+   "F1": "0.622 (0.123)"
+  },
+  {
+   "Condition": "Without facial MC electrodes",
+   "n": 20,
+   "AUROC": "0.612 (0.129)",
+   "Bal. Acc.": "0.584 (0.099)",
+   "F1": "0.587 (0.100)"
+  }
+ ],
+ "mann_whitney_u_balanced_accuracy": {
+  "label_x": "test balanced accuracy with all available electrodes",
+  "label_y": "test balanced accuracy without facial MC electrodes",
+  "alternative": "two-sided",
+  "n_x": 20,
+  "mdn_x": 0.7361692786216736,
+  "q1_x": 0.5445414930582047,
+  "q3_x": 0.766547828912735,
+  "n_y": 20,
+  "mdn_y": 0.5298125743865967,
+  "q1_y": 0.5149597823619843,
+  "q3_y": 0.6089955866336823,
+  "U": 281.0,
+  "z": 2.1910572122418603,
+  "p": 0.028447652543975684,
+  "r": 0.3464365637211621,
+  "A": 0.7025,
+  "n_tied_values": 0,
+  "group_x": "test balanced accuracy with all available electrodes (n = 20, Mdn = .736, IQR = .545–.767)",
+  "group_y": "test balanced accuracy without facial MC electrodes (n = 20, Mdn = .530, IQR = .515–.609)",
+  "apa": "U = 281, z = 2.19, p = .028, r = .35",
+  "sentence": "Test balanced accuracy with all available electrodes (n = 20, Mdn = .736, IQR = .545–.767) was significantly higher than test balanced accuracy without facial MC electrodes (n = 20, Mdn = .530, IQR = .515–.609), U = 281, z = 2.19, p = .028, r = .35."
+ },
+ "comparison_with_earlier_version": {
+  "previous_call": "mannwhitneyu(baseline, holdout, alternative='two-sided') with scipy defaults",
+  "previous_method": "asymptotic with continuity correction",
+  "previous_U": 281.0,
+  "previous_p": 0.02944088441208284,
+  "ranksums_z": 2.1910572122418603,
+  "ranksums_p": 0.028447652543975684
+ }
+}

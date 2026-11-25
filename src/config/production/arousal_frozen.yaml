@@ -1,0 +1,29 @@
+# Optimal hyperparameters identified during research optimization searches (via Optuna).
+# Foundational Model Configs
+finetune_ckpt: checkpoint/labram-base.pth
+freeze_backbone: True
+head_n_hidden_layers: 2
+head_hidden_dim: 64
+
+# Data/Task Specific configs
+dataset: brain_heart_arousal
+nb_classes: 2
+task_type: binary
+label_type: patchwise
+in_channels: 60
+dataset_path: src/data/brain_heart_emotion
+data_dir: data/brain_heart_emotion
+EEG_size: 800
+
+# Training Configs
+num_workers: 24
+epochs: 100
+batch_size: 256
+drop_rate: 0.423
+drop_path_rate: 0.423
+attn_drop_rate: 0.423
+weight_decay: 1.5e-03
+lr: 5.0e-04
+
+# Output Configs
+output_dir: output

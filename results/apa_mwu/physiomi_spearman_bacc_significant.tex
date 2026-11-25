@@ -1,0 +1,15 @@
+\begin{table}[ht]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{PhysioMI L/R: electrodes with FDR-significant correlation. Spearman rank correlation between the relative relevance of each electrode and the test balanced accuracy across $n = 15$ runs ($\mathit{df} = 13$); Benjamini--Hochberg FDR correction across 64 electrodes.}
+\label{tab:physiomi_spearman_bacc}
+\begin{tabular}{lrrr}
+\toprule
+Electrode & $r_s$ & $p$ & $p_{\mathrm{FDR}}$ \\
+\midrule
+FT7 & $.82$ & $< .001$ & $.010$ \\
+Fp2 & $-.79$ & $< .001$ & $.015$ \\
+\bottomrule
+\end{tabular}
+\end{table}

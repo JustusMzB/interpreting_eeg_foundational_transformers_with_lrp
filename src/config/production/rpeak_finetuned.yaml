@@ -1,0 +1,30 @@
+# Optimal hyperparameters identified during research optimization searches (via Optuna).
+# Foundational Model Configs
+finetune_ckpt: checkpoint/labram-base.pth
+
+# Data/Task Specific configs
+dataset: brain_heart_rpeak
+nb_classes: 2
+task_type: binary
+label_type: seq2seq
+in_channels: 60
+dataset_path: src/data/brain_heart_emotion
+data_dir: data/brain_heart_emotion
+EEG_size: 800
+
+# Training Configs
+num_workers: 24
+epochs: 100
+batch_size: 32
+drop_rate: 0.263
+drop_path_rate: 0.263
+attn_drop_rate: 0.263
+weight_decay: 1.5e-03
+lr: 5.0e-04
+class_weights: [6.33]
+
+# Output Configs
+output_dir: output
+
+# special: since we have 800 logits, we can't attribute them all.
+attributions_per_example: 4 # Same as in arousal etc.
